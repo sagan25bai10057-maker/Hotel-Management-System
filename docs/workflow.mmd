@@ -1,0 +1,14 @@
+flowchart TD
+S([Start]) --> M[Display Main Menu]
+M --> C{Choose Module}
+C -->|Rooms| R[View Room Status]
+C -->|Guests| G[Add/View Guest]
+C -->|Booking| B[Create or Cancel]
+C -->|Billing| BL[Generate Bill]
+C -->|Dashboard| D[View Statistics]
+R --> M
+G --> M
+B --> M
+BL --> M
+D --> M
+C -->|Exit| E([End])

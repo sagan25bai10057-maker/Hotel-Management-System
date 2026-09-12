@@ -1,0 +1,23 @@
+classDiagram
+class Room
+class Guest
+class Booking
+class Bill
+class Staff
+class FileManager
+class RoomManager
+class GuestManager
+class BookingManager
+class BillManager
+class ReportManager
+class InputValidator
+RoomManager --> Room
+GuestManager --> Guest
+BookingManager --> Booking
+BillManager --> Bill
+Booking --> Guest
+Booking --> Room
+RoomManager --> FileManager
+GuestManager --> FileManager
+BookingManager --> FileManager
+BillManager --> FileManager

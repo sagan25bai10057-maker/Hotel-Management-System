@@ -1,0 +1,12 @@
+flowchart LR
+U[Receptionist / Admin] --> UI[Console Menu]
+UI --> RM[Room Manager]
+UI --> GM[Guest Manager]
+UI --> BM[Booking Manager]
+UI --> BILL[Bill Manager]
+UI --> REP[Report Manager]
+RM --> FM[File Manager]
+GM --> FM
+BM --> FM
+BILL --> FM
+FM --> DB[(CSV Files)]

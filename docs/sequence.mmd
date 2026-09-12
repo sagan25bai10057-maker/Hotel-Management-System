@@ -1,0 +1,16 @@
+sequenceDiagram
+actor Receptionist
+participant Main
+participant GuestManager
+participant RoomManager
+participant BookingManager
+participant FileManager
+Receptionist->>Main: Choose New Booking
+Main->>GuestManager: Find guest
+GuestManager-->>Main: Guest
+Main->>RoomManager: Find available room
+RoomManager-->>Main: Room
+Main->>BookingManager: Create booking
+BookingManager->>FileManager: Save booking
+BookingManager-->>Main: Booking confirmation
+Main-->>Receptionist: Display confirmation
